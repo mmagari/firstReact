@@ -1,0 +1,10 @@
+@import '../../styles/settings.scss';
+
+.about {
+  text-align: center;
+  color: $color-light;
+
+  .description {
+    font-size: 16px;
+  }
+}

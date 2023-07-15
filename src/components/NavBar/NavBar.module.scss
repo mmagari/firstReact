@@ -1,0 +1,27 @@
+@import '../../styles/settings.scss';
+.navbar {
+  background-color: darken($color-dark, 3%);
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.logo {
+  text-decoration: none;
+  color: $color-light;
+  margin-left: 10%;
+  margin-top: 20px;
+  font-size: 34px;;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-right: 10%;
+}
+
+.navlink {
+  text-decoration: none;
+  color: $color-light;
+}
