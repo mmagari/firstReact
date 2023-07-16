@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './CardForm.module.scss';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
-import { addCard } from '../../redux/store';
+import { addCard } from '../../redux/cardsRedux';
 
 const CardForm = ({ columnId }) => {
   const [title, setTitle] = useState('');
