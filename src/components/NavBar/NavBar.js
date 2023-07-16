@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './NavBar.module.scss';
+import { NavLink } from 'react-router-dom';
+
 
 const NavBar = () => {
   return (
@@ -8,15 +10,9 @@ const NavBar = () => {
         <span className="fa fa-tasks" />
         </a>
       <ul className={styles.navlist}>
-        <li>
-          <a href="/" className={styles.navlink}>Home</a>
-        </li>
-        <li>
-          <a href="/favorite" className={styles.navlink}>Favorite</a>
-        </li>
-        <li>
-          <a href="/about" className={styles.navlink}>About</a>
-        </li>
+        <NavLink to="/" className={({ isActive }) => (isActive ? styles.linkActive : styles.navLink)}>Home</NavLink>
+        <NavLink to="/favorite" className={({ isActive }) => (isActive ? styles.linkActive : styles.navLink)}>Favorite</NavLink>
+        <NavLink to="/about" className={({ isActive }) => (isActive ? styles.linkActive : styles.navLink)}>About</NavLink>
       </ul>
     </nav>
   );

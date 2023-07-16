@@ -21,7 +21,12 @@
   margin-right: 10%;
 }
 
-.navlink {
+.navLink {
   text-decoration: none;
   color: $color-light;
+}
+
+.linkActive {
+  color: $color-warning;
+  text-decoration: none;
 }
