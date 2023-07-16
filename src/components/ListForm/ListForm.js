@@ -19,7 +19,6 @@ const ListForm = () => {
 
   return (
     <form className={styles.listForm} onSubmit={handleSubmit}>
-     
       <TextInput
         type="text"
         placeholder="Title"
